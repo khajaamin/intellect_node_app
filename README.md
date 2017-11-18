@@ -48,6 +48,15 @@ INTALL and start with below commands
 JFI -  this is not complted and this will be fail in our automated test result. 
 
 
+The working  api for above is 
+
+http://localhost:3000/api/user/active_users
+
+{"active_users":[{"id":"1","first_name":"Rahul","last_name":"Survase","email":"rahul@gmail.com","pinCode":411041,"birthdate":"02-DEC-1988","is_active":true,"user_todos":[{"id":"1","user_id":"1","text":"Design Wireframes","done":false,"target_date":"17-NOV-2017"}]},{"id":"2","first_name":"khajaamin","last_name":"attar","email":"khajaamin@gmail.com","pinCode":411041,"birthdate":"02-DEC-1988","is_active":true,"user_todos":[{"id":"2","user_id":"2","text":"Convert into HTML","done":false,"target_date":"17-NOV-2017"},{"id":"3","user_id":"2","text":"Add angular and events","done":false,"target_date":"20-NOV-2017"},{"id":"4","user_id":"2","text":"Api Integrations","done":false,"target_date":"19-NOV-2017"},{"id":"5","user_id":"2","text":"Api testing","done":false,"target_date":"19-NOV-2017"},{"id":"6","user_id":"2","text":"Api Integrations","done":false,"target_date":"19-NOV-2017"},{"id":"7","user_id":"2","text":"Api Integrations","done":false,"target_date":"19-NOV-2017"},{"id":"8","user_id":"2","text":"Unit Testing","done":true,"target_date":"19-NOV-2017"},{"id":"9","user_id":"2","text":"Call with Client 1 ","done":true,"target_date":"19-NOV-2017"},{"id":"10","user_id":"2","text":"Api Integrations","done":false,"target_date":"19-NOV-2017"},{"id":"10","user_id":"2","text":"Api Integrations","done":true,"target_date":"19-NOV-2017"}]}]}
+
+
+
+
 Thank you
 
 
