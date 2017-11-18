@@ -7,31 +7,8 @@
 	/* GET users listing. */
 
 
-router.get('/:user_id',function(req,res){
-	var user_array=user.user;
-	var todos_array = todos.todos;
-	var selected_user;
-	var selected_todos=[];
-	for(var i=0; i<user_array.length ; i++){
-		if(user_array[i].id === req.params.user_id){
-			selected_user = user_array[i];
-			break;
-		}
-	}
-	if(typeof selected_user !== 'undefined'){
-		for(var i=0; i < todos_array.length ; i++){
-		if(todos_array[i].user_id === selected_user.id && todos_array[i].done === false){
-			selected_todos.push(todos_array[i]);
-			}
-		}
-	}
-	var response={};
-	response.user= selected_user;
-	response.todos= selected_todos;
-	res.send(JSON.stringify(response));
-	});
 
-	router.get('/active_user', function(req, res, next) {
+	router.get('/', function(req, res, next) {
 
 		var user_array=user.user;
 		var todos_array = todos.todos;

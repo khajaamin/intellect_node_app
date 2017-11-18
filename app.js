@@ -13,6 +13,7 @@ var indexName = "randomindex";
 var index = require('./routes/index');
 var users = require('./routes/users');
 var todos = require('./routes/todos');
+var usertodos = require('./routes/userstodos');
 
 var app = express();
 
@@ -32,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/api/users', users);
 app.use('/api/todos',todos); 
+app.use('/api/user/active_users',usertodos); 
 
 
 // catch 404 and forward to error handler
