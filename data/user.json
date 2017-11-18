@@ -17,15 +17,6 @@
       "pinCode": 411041,
       "birthdate": "02-DEC-1988",
       "is_active": true
-    },
-    {
-      "id": "3",
-      "first_name": "Shubham",
-      "last_name": "Kumar",
-      "email": "shubham@gmail.com",
-      "pinCode": 411041,
-      "birthdate": "02-DEC-1988",
-      "is_active": false
     }
   ]
 }
